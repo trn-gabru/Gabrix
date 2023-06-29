@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Roboto:300,500");
+
+
+        html,
+        body {
+            background-color: #151515;
+            margin: 0;
+            padding: 0;
+            background-color: #151515;
+            background-image: url("./images/contact-bg.jpg");
+            background-repeat: no-repeat;
+            background-position: center, center;
+
+        }
+
+        .form-popup-bg {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+
+            height: 100vh;
+            width: 100%;
+            font-family: "montserrat-light", sans-serif;
+            font-size: 14px;
+        }
+
+        .form-container {
+            opacity: .8;
+            background-color: #151515;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 500px;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            padding: 60px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .form-popup-bg input {
+            height: 30px;
+            width: 100%;
+            outline: none;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .form-group label {
+            margin-bottom: 8px;
+
+        }
+
+        .form-group input {
+            margin-bottom: 15px;
+            border: none;
+            background: transparent;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+            color: white;
+
+        }
+
+        .form-group input:focus {
+            border-bottom: 1px solid #e40737;
+        }
+
+        textarea {
+            margin-bottom: 20px;
+            border: none;
+            background: transparent;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+            outline: none;
+            color: white;
+
+        }
+
+        textarea:focus {
+            border-bottom: 1px solid #e40737;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px 30px;
+            outline: none;
+            margin-bottom: 30px;
+            background-color: #e40737;
+            color: white;
+            border: none;
+            font-family: "montserrat-light", sans-serif;
+            font-weight: 600;
+            letter-spacing: 2px;
+            font-size: 12px;
+            transition: ease-in 0.3s;
+        }
+
+        button:hover {
+            background-color: #33a242;
+            ;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            transition: ease-in 0.3s;
+
+        }
+
+        a:hover {
+            color: #33a242;
+        }
+
+        .jobtype {
+            margin-bottom: 15px;
+            border: none;
+            background: transparent;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+            color: #e40737;
+            padding: 6px 0;
+        }
+
+        .jobtype:focus {
+            border-bottom: 1px solid #e40737;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+
+    <div class="form-popup-bg">
+        <div class="form-container">
+            <h1>Application Form</h1>
+            <p>Please complete this form. and we will contact you as soon as possible.</p>
+            <form action="#">
+                <div class="form-group">
+                    <input name="name" placeholder="Full-Name" type="text" class="form-control" required />
+                </div>
+                <div class="form-group">
+                    <input name="email" placeholder="E-Mail" class="form-control" type="text" required />
+                </div>
+                <div class="form-group">
+                    <input name="number" placeholder="Phone-Number" class="form-control" type="number" required />
+                </div>
+
+                <div class="form-group">
+
+                    <select required class="jobtype" name="jobtype" id="">
+                        <option value="Graphic Design">Graphic Design</option>
+                        <option value="Web Development">Web Development</option>
+
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input name="workexperience" placeholder="Total Work Experience" class="form-control" type="number"
+                        required />
+                </div>
+
+                <div class="form-group">
+                    <textarea name="message" placeholder="Message..." cols="20" rows="6" required></textarea>
+                </div>
+                <button>APPLY</button>
+            </form>
+
+            <a href="career.html">← Back to Careers </a>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

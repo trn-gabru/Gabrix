@@ -1,0 +1,27 @@
+<?php
+
+$con = mysqli_connect("localhost", "root",);
+
+if ($con) {
+    echo "Connection Successfull";
+} else {
+    echo "No Connection";
+};
+
+mysqli_select_db($con, 'gabrix');
+
+$name = $_POST['name'];
+$email = $_POST['email'];
+$number = $_POST['number'];
+$jobtype = $_POST['jobtype'];
+$workexperience = $_POST['workexperience'];
+$message = $_POST['message'];
+
+$query = " insert into applications (name, email, number, jobtype, workexperience, message) 
+values ('$name', '$email', '$number', '$jobtype', '$workexperience','$message') ";
+
+
+mysqli_query($con, $query);
+header('location:careerForm.php');
+
+?>
