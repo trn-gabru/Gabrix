@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Gaurav Nalawade</h1>
 <h3 align="center">A passionate frontend developer from India</h3>
 <h3 align="center"> Preview This project at [ https://trn-gabru.github.io/Gabrix/]</h3>
-- 👨‍💻 All of my projects are available at [https://linktr.ee/Gabrix.Graphic](https://linktr.ee/Gabrix.Graphic)
+- 👨‍💻 All of my projects are available at [https://linktr.ee/Gabrix.Graphic]
 
 - 📫 How to reach me **gauravnalawade169@gmail.com**
 
